@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: poppings ,sans-serif;
+}
+body{
+    background-image: url(images/bg-intro-desktop.png);
+    background-color:hsl(0, 100%, 74%) ;
+    margin: 5px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 82px; */
+    margin: 20px 100px 20px 20px;
+    justify-content: space-between;
+}
+@media screen and (max-width:375px) {
+    .container {
+        display: block;
+        margin: 0px;
+
+    }
+}
+.text-container{
+    color: white;
+    width: 490px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+@media screen and (max-width:375px) {
+    .text-container{
+        color: white;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+}
+.text-container h1{
+    flex: 1;
+}
+@media screen and (max-width:375px){
+.text-container h1{
+    margin: 50px 0px;
+}
+}
+.text-container p{
+    flex: 1;
+    font-size: 16px;
+}
+section{
+    /* flex: 1; */
+    margin-right: 20px;
+}
+section form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0px 13px 9px 5px rgb(100,30,60,0.3);
+}
+@media screen and (max-width:375px) {
+    
+    section form{
+    margin: 0 0 60px 20px;
+    }
+}
+
+section input { 
+    margin: 20px;
+    padding: 20px;
+    border: lightgray solid 2px;
+    border-radius: 5px;
+    outline: none;
+}
+section button{
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    font-variant: all-petite-caps;
+    font-size: 16px;
+    box-shadow: 0px 3px 8px 0px hsl(154, 59%, 51%,1);
+    background-color: hsl(154, 59%, 51%);
+    cursor: pointer;
+}
+section p.head{
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 5px 0px rgb(100,30,60,0.3);
+}
+@media screen and (max-width:375px) {
+    section p.head{
+        margin-top: 50px;
+        margin-left: 20px;
+        }
+}
+
+section p.foot{
+    color: lightgray;
+    margin: -10px auto 40px;
+    font-size: 13.3px;;
+}
+@media screen and (max-width:375px) {
+    section p.foot{
+        text-align: center;
+    padding: 0px 15px;
+    }
+}
+section p.foot span{
+    color: hsl(0, 100%, 74%);
+    cursor: pointer;
+}
+form p.Name,
+form p.lName,
+form p.email,
+form p.pass
+{
+    text-align: end;
+    margin-right:20px ;
+    font-size: 15px;
+    display: none;
+    color: hsl(0, 100%, 74%);
+    
+}
+.red-value{
+    color: hsl(0, 100%, 74%);
+    font-size: 15px;
+    font-weight: 600;
+}
+
